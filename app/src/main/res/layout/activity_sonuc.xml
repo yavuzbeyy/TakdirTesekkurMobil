@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meh"
+    tools:context=".sonuc">
+
+    <TextView
+        android:id="@+id/ortalama"
+        android:layout_width="268dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:textColor="#E60909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/basari"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#E60202"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="45dp"
+        android:text="MENÜ"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basari" />
+</androidx.constraintlayout.widget.ConstraintLayout>
